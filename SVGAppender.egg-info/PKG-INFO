@@ -1,5 +1,5 @@
 Metadata-Version: 1.0
-Name: crytto
+Name: SVGAppender
 Version: 0.1.0
 Summary: A lightweight Python SVG parser that focuses on correctly layering SVG images
 Home-page: https://github.com/Amirh24/SVGAppender.git

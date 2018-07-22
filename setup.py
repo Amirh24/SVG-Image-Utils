@@ -3,7 +3,7 @@ from setuptools import setup
 setup(name='SVGAppender',
       description='A lightweight Python SVG parser that focuses on correctly layering SVG images',
       version='0.1.0',
-      scripts=['SVGAppender.py'],
+      scripts=['SVGAppender/SVGAppender.py'],
       py_modules=['SVGAppender'],
       install_requires=[
           'lxml',
