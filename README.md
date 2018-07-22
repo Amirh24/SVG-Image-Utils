@@ -10,7 +10,7 @@ tell you *why* your library has this size and show real cost of all your
 internal dependencies.
 
 <p align="center">
-  <img src="./Images/monkey.psvg" alt="Base Template"
+  <img src=".Images/monkey.svg" alt="Base Template"
        width="712" height="712">
 </p>
 
