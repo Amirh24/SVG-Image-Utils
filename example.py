@@ -20,6 +20,7 @@ def run():
     base_template.append(glasses)
     base_template.append(hat)
     base_template.append(misc)
+
     # Save new SVG Image
     base_template.save('Images/merged.svg')
 

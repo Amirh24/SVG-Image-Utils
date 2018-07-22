@@ -5,26 +5,15 @@
 SVG Appender is a lightweight Python SVG parser that focuses on correctly layering SVG images
 
 
-
-You can add Size Limit to your continuous integration service
-(such as Travis CI) and set the limit. If you accidentally
-add a massive dependency, Size Limit will throw an error.
-
-<p align="center">
-  <img src="./img/example.png" alt="Size Limit example"
-       width="654" height="450">
-</p>
-
 Size Limit could tell you not only library size. With `--why` argument it can
 tell you *why* your library has this size and show real cost of all your
 internal dependencies.
 
 <p align="center">
-  <img src="./img/why.png" alt="Bundle Analyzer example"
-       width="650" height="335">
+  <img src="./Images/monkey.psvg" alt="Base Template"
+       width="712" height="712">
 </p>
 
-                         http://cultofmartians.com/tasks/size-limit-config.html
 ## Example
 
 We will stack SVG images over this SVG image
