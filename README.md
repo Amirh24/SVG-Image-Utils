@@ -4,7 +4,7 @@
 
 SVG Appender is a lightweight Python SVG parser that focuses on correctly layering SVG images
 
-When appending SVGs, a contradiction soon follows at the form of same name selctors in the style tag and class paths.
+When appending SVGs, a contradiction soon follows at the form of same name selectors in the style tag and class paths.
 SVG Appender modifies attributes that contradict each other between all the appended SVGs and as a result generates a
 new layered SVG image.
 
@@ -105,7 +105,7 @@ This will result in a new "merged" svg image:
 Install `svg-appender`:
 
 ```
-$ pip install --save- svg-appender
+$ pip install --save svg-appender
 ```
 
 Follow the example to view the usage style.
