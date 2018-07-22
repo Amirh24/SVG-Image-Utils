@@ -4,37 +4,51 @@
 
 SVG Appender is a lightweight Python SVG parser that focuses on correctly layering SVG images
 
+When appending SVGs, a contradiction soon follows at the form of same name selctors in the style tag and class paths.
+SVG Appender modifies attributes that contradict each other between all the appended SVGs and as a result generates a
+new layered SVG image.
 
-Size Limit could tell you not only library size. With `--why` argument it can
-tell you *why* your library has this size and show real cost of all your
-internal dependencies.
-
-<p align="center">
-  <img src="Images/monkey.svg" alt="Base Template"
-       width="712" height="712">
-</p>
 
 ## Example
 
-We will stack SVG images over this SVG image
+We will stack SVG images over the following SVG image:
 
 <p align="center">
-  <img src="./img/example.png" alt="Size Limit example"
-       width="654" height="450">
+  <img src="Images/monkey.svg" alt="Base Template"
+       width="500" height="500">
 </p>
 
-* [MobX](https://github.com/mobxjs/mobx)
-* [Material-UI](https://github.com/callemall/material-ui)
-* [Autoprefixer](https://github.com/postcss/autoprefixer)
-* [PostCSS](https://github.com/postcss/postcss) reduced
-  [25% of the size](https://github.com/postcss/postcss/commit/150edaa42f6d7ede73d8c72be9909f0a0f87a70f).
-* [Browserslist](https://github.com/ai/browserslist) reduced
-  [25% of the size](https://github.com/ai/browserslist/commit/640b62fa83a20897cae75298a9f2715642531623).
-* [EmojiMart](https://github.com/missive/emoji-mart) reduced [20% of the size](https://github.com/missive/emoji-mart/pull/111)
-* [nanoid](https://github.com/ai/nanoid) reduced
-  [33% of the size](https://github.com/ai/nanoid/commit/036612e7d6cc5760313a8850a2751a5e95184eab).
-* [Logux](https://github.com/logux) reduced
-  [90% of the size](https://github.com/logux/logux-client/commit/62b258e20e1818b23ae39b9c4cd49e2495781e91).
+The SVG images we will append are as following:
+
+<p>
+  <img src="Images/hat.svg" alt="Hat"
+       width="500" height="500">
+</p>
+
+<p>
+  <img src="Images/mouth.svg" alt="Mouth"
+       width="500" height="500">
+</p>
+
+<p>
+  <img src="Images/glasses.svg" alt="Glasses"
+       width="500" height="500">
+</p>
+
+<p>
+  <img src="Images/pants.svg" alt="Pants"
+       width="500" height="500">
+</p>
+
+<p>
+  <img src="Images/shoes.svg" alt="Shoes"
+       width="500" height="500">
+</p>
+
+<p>
+  <img src="Images/misc.svg" alt="Misc"
+       width="500" height="500">
+</p>
 
 
 ## How It Works
