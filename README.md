@@ -17,10 +17,11 @@ We will stack SVG images over the following SVG image:
   <img src="Images/monkey.svg" alt="Base Template"
        width="500" height="500">
 </p>
-
+This monkey is in a need for customisation.
 The SVG images we will append are as following:
 
 <p>
+    <h2> Hat: </h2>
   <img src="Images/hat.svg" alt="Hat"
        width="500" height="500">
 </p>
