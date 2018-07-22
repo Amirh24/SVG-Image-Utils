@@ -1,11 +1,10 @@
-# Size Limit [![Cult Of Martians][cult-img]][cult]
+# SVG Appender
 
-<img src="https://ai.github.io/size-limit/logo.svg" align="right"
-     title="Size Limit logo by Anton Lovchikov" width="120" height="178">
 
-Size Limit is a tool to prevent JavaScript libraries bloat.
-With it, you know exactly for how many kilobytes your JS library
-increases the user bundle.
+
+SVG Appender is a lightweight Python SVG parser that focuses on correctly layering SVG images
+
+
 
 You can add Size Limit to your continuous integration service
 (such as Travis CI) and set the limit. If you accidentally
@@ -25,18 +24,15 @@ internal dependencies.
        width="650" height="335">
 </p>
 
+                         http://cultofmartians.com/tasks/size-limit-config.html
+## Example
+
+We will stack SVG images over this SVG image
+
 <p align="center">
-  <a href="https://evilmartians.com/?utm_source=size-limit">
-    <img src="https://evilmartians.com/badges/sponsored-by-evil-martians.svg"
-         alt="Sponsored by Evil Martians" width="236" height="54">
-  </a>
+  <img src="./img/example.png" alt="Size Limit example"
+       width="654" height="450">
 </p>
-
-[Size Limit: Make the Web lighter]: https://evilmartians.com/chronicles/size-limit-make-the-web-lighter
-[cult-img]:                         http://cultofmartians.com/assets/badges/badge.svg
-[cult]:                             http://cultofmartians.com/tasks/size-limit-config.html
-
-## Who Uses Size Limit
 
 * [MobX](https://github.com/mobxjs/mobx)
 * [Material-UI](https://github.com/callemall/material-ui)

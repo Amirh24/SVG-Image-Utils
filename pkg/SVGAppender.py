@@ -38,7 +38,7 @@ class SVGAppender(object):
         self.root.set("version", "1.1")
 
     def append(self, element):
-        """Append new element to the SVGAppender
+        """Append new element to the pkg
 
                 Parameters
                 ----------
@@ -79,7 +79,7 @@ class SVGAppender(object):
 
     def to_str(self):
         """
-        Returns a string of the SVGAppender.
+        Returns a string of the pkg.
         """
         return etree.tostring(self.root, xml_declaration=True,
                               standalone=True,
@@ -138,14 +138,14 @@ class SVGAppender(object):
         return fig
 
     def adddata(self):
-        """Add more data to the SVGAppender"""
+        """Add more data to the pkg"""
         self.style_element = self.root.find('./' + self.root[0].tag + '/' + self.root[0][0].tag)
         self.group_path = './' + self.root[2].tag
         self.number_of_classes = cssutils.parseString(self.style_element.text).cssRules.length
 
     def modifygroupvalues(self, group_element):
         """
-        Change cls-x value to a number aligned with total number of classes in the SVGAppender
+        Change cls-x value to a number aligned with total number of classes in the pkg
         Parameters
         ----------
         group_element : _Element
@@ -160,7 +160,7 @@ class SVGAppender(object):
 
     def modifystylevalues(self,css_string):
         """
-        Change cls-x selectors to a number aligned with total number of classes in the SVGAppender
+        Change cls-x selectors to a number aligned with total number of classes in the pkg
         Parameters
         ----------
         css_string : str
