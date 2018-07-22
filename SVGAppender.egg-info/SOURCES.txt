@@ -1,8 +1,0 @@
-README.rst
-setup.py
-SVGAppender/SVGAppender.py
-SVGAppender.egg-info/PKG-INFO
-SVGAppender.egg-info/SOURCES.txt
-SVGAppender.egg-info/dependency_links.txt
-SVGAppender.egg-info/requires.txt
-SVGAppender.egg-info/top_level.txt
