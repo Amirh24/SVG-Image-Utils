@@ -9,6 +9,15 @@ SVG Appender modifies attributes that contradict each other between all the appe
 new layered SVG image.
 
 
+## Usage
+
+Install `svgappender`:
+
+```
+$ pip install --save svgappender
+```
+
+
 ## Example
 
 We will stack SVG images over the following SVG image:
@@ -66,7 +75,7 @@ The SVG images we will append are as following:
 The following snippet will create an SVG appender for each SVG image and will append them onto the base template appender.
 
 ```
-    from pkg.SVGAppender import SVGAppender as svga
+    from svgappender import SVGAppender as svga
 
 
     # Create SVG Appender for each SVG image
@@ -99,13 +108,3 @@ This will result in a new "merged" svg image:
   <img src="Images/merged.svg" alt="Merged"
        width="500" height="500">
 </p>
-
-## Usage
-
-Install `svg-appender`:
-
-```
-$ pip install --save svg-appender
-```
-
-Follow the example to view the usage style.

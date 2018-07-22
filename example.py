@@ -1,4 +1,4 @@
-from pkg.SVGAppender import SVGAppender as svga
+from svgappender import SVGAppender as svga
 
 
 def run():
