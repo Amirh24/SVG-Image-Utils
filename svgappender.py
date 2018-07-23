@@ -167,6 +167,11 @@ class SVGAppender(object):
         ----------
         css_string : str
             A css formed string. Its cls-x selectors should change.
+
+        Returns
+        -------
+        str
+            A modified css style string.
         """
         sheet = cssutils.parseString(css_string)
         for rule in sheet:
