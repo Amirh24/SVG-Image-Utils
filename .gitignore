@@ -70,3 +70,5 @@ env.bak/
 venv.bak/
 
 README.rst
+.pypirc
+pip-selfcheck.json

@@ -26,6 +26,3 @@ def run():
 
 if __name__ == '__main__':
     run()
-
-# print(rule.style.getCssText())
-# print(rule.style.getPropertyCSSValue('fill'))
