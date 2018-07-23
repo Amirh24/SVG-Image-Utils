@@ -95,17 +95,17 @@ class SVGAppender(object):
         fid.close()
 
     def fromfile(fname):
-        """Create a SVGGAppender from file.
+        """Create a SVGAppender from file.
 
         Parameters
         ----------
         fname : str
-            name of the SVG file
+            path to the name of the SVG file
 
         Returns
         -------
-        SVGGAppender
-            newly created :py:class:`SVGGAppender` initialised with the file content
+        SVGAppender
+            newly created :py:class:`SVGAppender` initialised with the file content
         """
         fig = SVGAppender()
         fid = open(fname)
@@ -116,7 +116,7 @@ class SVGAppender(object):
         return fig
 
     def fromstring(text):
-        """Create a SVGGAppender from a string.
+        """Create a SVGAppender from a string.
 
         Parameters
         ----------
@@ -125,8 +125,8 @@ class SVGAppender(object):
 
         Returns
         -------
-        SVGGAppender
-            newly created :py:class:`SVGGAppender` initialised with the string
+        SVGAppender
+            newly created :py:class:`SVGAppender` initialised with the string
             content.
         """
         fig = SVGAppender()
