@@ -78,18 +78,18 @@ The SVG images we will append are as following:
 The following snippet will create an SVG appender for each SVG image and will append them onto the base template appender.
 
 ```
-    from svgimgutils import SVGImgUtils as SVGIU
+    from svgimgutils import SVGImgUtils
 
 
     # Create SVG Image Utils for each SVG image
-    base_template = SVGIU.fromfile('Images/monkey.svg')
-    pants = SVGIU.fromfile('Images/pants.svg')
-    shoes = SVGIU.fromfile('Images/shoes.svg')
-    tail = SVGIU.fromfile('Images/tail.svg')
-    mouth = SVGIU.fromfile('Images/mouth.svg')
-    glasses = SVGIU.fromfile('Images/glasses.svg')
-    hat = SVGIU.fromfile('Images/hat.svg')
-    misc = SVGIU.fromfile('Images/misc.svg')
+    base_template = SVGImgUtils.fromfile('Images/monkey.svg')
+    pants = SVGImgUtils.fromfile('Images/pants.svg')
+    shoes = SVGImgUtils.fromfile('Images/shoes.svg')
+    tail = SVGImgUtils.fromfile('Images/tail.svg')
+    mouth = SVGImgUtils.fromfile('Images/mouth.svg')
+    glasses = SVGImgUtils.fromfile('Images/glasses.svg')
+    hat = SVGImgUtils.fromfile('Images/hat.svg')
+    misc = SVGImgUtils.fromfile('Images/misc.svg')
 
     # Append SVG images onto base template
     base_template.append(pants)

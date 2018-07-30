@@ -37,15 +37,13 @@ class SVGImgUtils(object):
         self.root = etree.Element(SVG + "svg", nsmap=NSMAP)
         self.root.set("version", "1.1")
 
-    def append(self, element, new_color=None):
-        """Append new element to the svgappender
+    def append(self, element):
+        """Append new element to the svgimgutils
 
                 Parameters
                 ----------
                 element : SVGImgUtils
                     an SVG element to append
-                new_color : str
-                    A color represented in hex. Should replace old color marked as '#010101'
 
                 """
         try:
@@ -54,7 +52,7 @@ class SVGImgUtils(object):
             for g in group_elements:
                 self.modifygroupvalues(g)
             # Change the style tag according to the number of classes in the SVG
-            element.style_element.text = self.modifystylevalues(element.style_element.text, new_color)
+            element.style_element.text = self.modifystylevalues(element.style_element.text)
             # Add number of classes in appended SVG to the appender SVG
             self.number_of_classes += element.number_of_classes
             # Append SVGs
@@ -63,7 +61,7 @@ class SVGImgUtils(object):
             self.root.append(GroupElement(element).root)
 
     def getroot(self):
-        """Return the root element of the appender.
+        """Return the root element of the utils.
 
         The root element is a group of elements after stripping the toplevel
         ``<svg>`` tag.
@@ -81,7 +79,7 @@ class SVGImgUtils(object):
 
     def to_str(self):
         """
-        Returns a string of the svgappender.
+        Returns a string of the svgimgutils.
         """
         return etree.tostring(self.root, xml_declaration=True,
                               standalone=True,
@@ -97,7 +95,7 @@ class SVGImgUtils(object):
         fid.close()
 
     def fromfile(fname):
-        """Create a SVGAppender from file.
+        """Create a SVGImgUtils from file.
 
         Parameters
         ----------
@@ -107,7 +105,7 @@ class SVGImgUtils(object):
         Returns
         -------
         SVGImgUtils
-            newly created :py:class:`SVGAppender` initialised with the file content
+            newly created :py:class:`SVGImgUtils` initialised with the file content
         """
         fig = SVGImgUtils()
         fid = open(fname)
@@ -118,7 +116,7 @@ class SVGImgUtils(object):
         return fig
 
     def fromstring(text):
-        """Create a SVGAppender from a string.
+        """Create a SVGImgUtils from a string.
 
         Parameters
         ----------
@@ -128,7 +126,7 @@ class SVGImgUtils(object):
         Returns
         -------
         SVGImgUtils
-            newly created :py:class:`SVGAppender` initialised with the string
+            newly created :py:class:`SVGImgUtils` initialised with the string
             content.
         """
         fig = SVGImgUtils()
@@ -142,13 +140,13 @@ class SVGImgUtils(object):
     # ----PRIVATE METHODS----
 
     def adddata(self):
-        """Add more data to the svgappender"""
+        """Add more data to the svgimgutils"""
         self.style_element = self.root.find('./' + self.root[0].tag + '/' + self.root[0][0].tag)
         self.number_of_classes = cssutils.parseString(self.style_element.text).cssRules.length
 
     def modifygroupvalues(self, group_element):
         """
-        Change cls-x value to a number aligned with total number of classes in the svgappender
+        Change cls-x value to a number aligned with total number of classes in the svgimgutils
         Parameters
         ----------
         group_element : _Element
@@ -161,15 +159,13 @@ class SVGImgUtils(object):
                 cls_number += self.number_of_classes
                 c.attrib['class'] = 'cls-' + str(cls_number)
 
-    def modifystylevalues(self,css_string, new_color):
+    def modifystylevalues(self,css_string):
         """
-        Change cls-x selectors to a number aligned with total number of classes in the svgappender
+        Change cls-x selectors to a number aligned with total number of classes in the svgimgutils
         Parameters
         ----------
         css_string : str
             A css formed string. Its cls-x selectors should change.
-        new_color : str
-            A color represented in hex. Should replace old color marked as '#010101'
 
         Returns
         -------
