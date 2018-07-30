@@ -75,7 +75,7 @@ The SVG images we will append are as following:
        width="500" height="500">
 </p>
 
-The following snippet will create an SVG appender for each SVG image and will append them onto the base template appender.
+The following snippet will create an SVG Image Utils for each SVG image and will append them onto the base template SVG.
 
 ```
     from svgimgutils import SVGImgUtils
