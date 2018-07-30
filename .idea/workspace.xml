@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f0bc437-a671-40ec-a2ce-cc83c468bf4e" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/SVGAppender.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SVGAppender.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/merged.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Images/merged.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/monkey.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Images/monkey.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Images/tail.svg" beforeDir="false" afterPath="$PROJECT_DIR$/Images/tail.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/example.py" beforeDir="false" afterPath="$PROJECT_DIR$/example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/svgappender.py" beforeDir="false" afterPath="$PROJECT_DIR$/svgimageutils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,11 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="svgappender.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/svgappender.py">
+      <file leaf-file-name="svgimageutils.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/svgimageutils.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3175">
-              <caret line="139" column="29" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
+            <state relative-caret-position="233">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
               <folding>
                 <element signature="e#0#22#0" expanded="true" />
               </folding>
@@ -26,84 +34,53 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="setup.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="tail.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/tail.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="hat.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/hat.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="glasses.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/glasses.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="shoes.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/shoes.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="mouth.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/mouth.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="pants.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/pants.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="misc.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/misc.svg">
+          <provider selected="true" editor-type-id="images" />
+        </entry>
+      </file>
+      <file leaf-file-name="setup.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/setup.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="275">
-              <caret line="11" column="49" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="49" />
+            <state relative-caret-position="225">
+              <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="example.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/example.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pip-selfcheck.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pip-selfcheck.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="29" selection-start-column="29" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name=".pypirc" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.pypirc">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.rst" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/README.rst">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="13" selection-start-column="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="requirements.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/requirements.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file leaf-file-name="svgappender.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Downloads/svgappender-0.1.1/svgappender-0.1.1/svgappender.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-              <folding>
-                <element signature="e#0#22#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+      <file leaf-file-name="monkey.svg" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/images/monkey.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -117,12 +94,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>who uses</find>
       <find>aaaa</find>
       <find>shirt5</find>
       <find>--דשהק</find>
       <find>scripts</find>
       <find>fromfile</find>
+      <find>SVGG</find>
+      <find>propertyVa</find>
+      <find>PropertyValue</find>
+      <find>print</find>
+      <find>cssvalue</find>
+      <find>class property</find>
+      <find>modifygroupvalues</find>
+      <find>f6145</find>
+      <find>gree</find>
+      <find>red</find>
+      <find>append</find>
+      <find>010101</find>
+      <find>green</find>
+      <find>aaa</find>
+      <find>313cc4</find>
+      <find>self.toColor</find>
+      <find>[ur[;e</find>
+      <find>to_str</find>
+      <find>7f614522</find>
+      <find>7f6145</find>
+      <find>.</find>
+      <find>findall</find>
+      <find>group</find>
+      <find>'.'</find>
+      <find>svgA</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -144,7 +145,6 @@
         <option value="$PROJECT_DIR$/Images/hat.svg" />
         <option value="$PROJECT_DIR$/Images/glasses.svg" />
         <option value="$PROJECT_DIR$/Images/glasses5.svg" />
-        <option value="$PROJECT_DIR$/Images/monkey.svg" />
         <option value="$PROJECT_DIR$/Images/shirt3_0.svg" />
         <option value="$PROJECT_DIR$/Images/shirt4.svg" />
         <option value="$PROJECT_DIR$/Images/mouth4.svg" />
@@ -154,23 +154,30 @@
         <option value="$PROJECT_DIR$/Images/shirt2.svg" />
         <option value="$PROJECT_DIR$/Images/shirt5.svg" />
         <option value="$PROJECT_DIR$/Images/shoes.svg" />
-        <option value="$PROJECT_DIR$/Images/tail.svg" />
         <option value="$PROJECT_DIR$/Images/merged.svg" />
         <option value="$PROJECT_DIR$/gitignore" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/pypirc.py" />
         <option value="$PROJECT_DIR$/pip-selfcheck.json" />
         <option value="$PROJECT_DIR$/.pypirc" />
-        <option value="$PROJECT_DIR$/setup.py" />
-        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/Images/monkey.svg" />
+        <option value="$PROJECT_DIR$/Images/tail.svg" />
+        <option value="$PROJECT_DIR$/images/accessories/misc/basic/b.svg" />
+        <option value="$PROJECT_DIR$/images/outline+shader.svg" />
+        <option value="$PROJECT_DIR$/images/accessories/shirtsandpants/basic/JEANS.svg" />
         <option value="$PROJECT_DIR$/svgappender.py" />
         <option value="$PROJECT_DIR$/example.py" />
+        <option value="$PROJECT_DIR$/svgimageutils.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/images/tail.svg" />
+        <option value="$PROJECT_DIR$/images/monkey.svg" />
+        <option value="$PROJECT_DIR$/setup.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="134" />
-    <option name="y" value="86" />
+    <option name="x" value="131" />
+    <option name="y" value="85" />
     <option name="width" value="1400" />
     <option name="height" value="990" />
   </component>
@@ -188,10 +195,6 @@
               <item name="SVGAppender" type="b2602c69:ProjectViewProjectNode" />
               <item name="SVGAppender" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="SVGAppender" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -199,16 +202,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../monKey-SVG" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\AmirH\PycharmProjects\SVGAppender" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\AmirH\PycharmProjects\SVGAppender\images\vanity" />
       <recent name="C:\Users\AmirH\PycharmProjects\SVGAppender" />
       <recent name="C:\Users\AmirH\PycharmProjects\SVGAppender\Images" />
       <recent name="C:\Users\AmirH\PycharmProjects\SVGAppender\SVGAppender" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\AmirH\PycharmProjects\SVGAppender" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -262,26 +267,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2265625" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32943678" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3048276" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1434644" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3995749" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.3060574" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -293,184 +298,153 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pkg/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/pip-selfcheck.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dist/svgappender-0.1.0.tar.gz" />
-    <entry file="file://$PROJECT_DIR$/pyvenv.cfg" />
-    <entry file="file://$PROJECT_DIR$/pkg/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/dist/crytto-0.1.0.tar.gz" />
-    <entry file="file://$PROJECT_DIR$/dist/svgappender-0.1.0.tar.gz" />
-    <entry file="file://$PROJECT_DIR$/Images/db.svg" />
-    <entry file="file://$PROJECT_DIR$/Images/monkey.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/mouth/basic/d.svg" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/mouth/basic/e.svg" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/mouth/basic/MEH.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/mouth.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/mouth/basic/f.svg" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/mouth/basic/PIPE.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/shoe3.svg" />
-    <entry file="file://$PROJECT_DIR$/Images/misc.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/mouth/basic/TONGUE_OUT.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/shirt.svg" />
-    <entry file="file://$PROJECT_DIR$/Images/glasses.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/shirtsandpants/basic/a.svg" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/shirtsandpants/basic/b.svg" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/shirtsandpants/basic/BLUE_OVERALL.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/glasses.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/shirtsandpants/basic/c.svg" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/shirtsandpants/basic/d.svg" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/shirtsandpants/basic/CLEAN_WHITE_T.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/monkey.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/shirtsandpants/basic/FLOWERY.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/shirt3_0.svg" />
-    <entry file="file://$PROJECT_DIR$/Images/glasses3_0 (1).svg" />
-    <entry file="file://$PROJECT_DIR$/Images/glasses2_1.svg" />
-    <entry file="file://$PROJECT_DIR$/Images/glasses.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/shirtsandpants/basic/RED_OVERALL.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/mouth.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/shirtsandpants/basic/STRIPES_COLORABLE.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/shirt.svg" />
-    <entry file="file://$PROJECT_DIR$/Images/shirt2.svg" />
-    <entry file="file://$PROJECT_DIR$/Images/pants.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/shoes/basic/a.svg" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/shoes/basic/b.svg" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/shoes/basic/BLUE_SHOES.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/shoes.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/shoes/basic/CLEAN_WHITE_SHOES.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/tail.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/shoes/basic/GREEN_SHOES.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pypirc.py" />
-    <entry file="file://$PROJECT_DIR$/Images/hat.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/shoes/basic/GRAY_SLIPPERS.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Images/merged.svg">
+    <entry file="file://$PROJECT_DIR$/images/accessories/shoes/basic/RED_SHOES.svg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/dist/svg-appender-0.1.0.tar.gz" />
-    <entry file="file://$PROJECT_DIR$/svgappender-0.1.0.tar.gz" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="71" column="10" selection-start-line="71" selection-start-column="10" selection-end-line="71" selection-end-column="10" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/images/accessories/shoes/basic/SOCKS_COLORABLE.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/svgappender.egg-info/top_level.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/tail/basic/TAIL_COLORABLE.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/svgappender.egg-info/dependency_links.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/images/2monkey.svg" />
+    <entry file="file://$PROJECT_DIR$/images/2monkey.svg" />
+    <entry file="file://$PROJECT_DIR$/images/accessories/tail/basic/TAIL_COLORABLE.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/svgappender.egg-info/PKG-INFO">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/images/vanity/2subzero.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/svgappender.egg-info/requires.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/images/vanity/2darthvader.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/svgappender.egg-info/SOURCES.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/images/vanity/2arthas.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/LICENSE">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/images/vanity/2darthvader.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.rst">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/images/vanity/2arthas.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="file://$PROJECT_DIR$/images/vanity/2subzero.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$USER_HOME$/Downloads/svgappender-0.1.1/svgappender-0.1.1/svgappender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="18" column="27" selection-start-line="18" selection-start-column="27" selection-end-line="18" selection-end-column="27" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/images/accessories/hat/basic/CAP_PEPE.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
-          <caret line="11" column="49" selection-start-line="11" selection-start-column="38" selection-end-line="11" selection-end-column="49" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/images/accessories/shirtsandpants/basic/JEANS.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/pip-selfcheck.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/images/vanity/hat9.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/.pypirc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/svgappender.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3175">
-          <caret line="139" column="29" selection-start-line="139" selection-start-column="29" selection-end-line="139" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#22#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/images/vanity/arthas.svg">
+      <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/example.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="10" lean-forward="true" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+        <state relative-caret-position="450">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2825">
+          <caret line="113" lean-forward="true" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/merged.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/monkey.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/tail.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/shoes.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/pants.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/mouth.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/misc.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/monkey.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/hat.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/glasses.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/svgimageutils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
         </state>
       </provider>
     </entry>

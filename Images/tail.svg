@@ -1,7 +1,7 @@
 <svg
 	xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4000 4000">
 	<defs>
-		<style>.cls-1{fill:#ee3522;}.cls-1,.cls-2{stroke:#333;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;}.cls-2{fill:#fff;}</style>
+		<style>.cls-1{fill:red;}.cls-1,.cls-2{stroke:#333;stroke-linecap:round;stroke-linejoin:round;stroke-width:5px;}.cls-2{fill:#fff;}</style>
 	</defs>
 	<title>tail</title>
 	<g id="tail">

@@ -31,28 +31,30 @@ class GroupElement(FigureElement):
         self.root = new_group
 
 
-class SVGAppender(object):
+class SVGImgUtils(object):
 
     def __init__(self):
         self.root = etree.Element(SVG + "svg", nsmap=NSMAP)
         self.root.set("version", "1.1")
 
-    def append(self, element):
+    def append(self, element, new_color=None):
         """Append new element to the svgappender
 
                 Parameters
                 ----------
-                element : SVGAppender
+                element : SVGImgUtils
                     an SVG element to append
+                new_color : str
+                    A color represented in hex. Should replace old color marked as '#010101'
 
                 """
         try:
             # Change the Class paths according to the number of classes in the SVG
-            group_elements = element.root.findall(element.group_path)
+            group_elements = element.root.findall('.')
             for g in group_elements:
                 self.modifygroupvalues(g)
             # Change the style tag according to the number of classes in the SVG
-            element.style_element.text = self.modifystylevalues(element.style_element.text)
+            element.style_element.text = self.modifystylevalues(element.style_element.text, new_color)
             # Add number of classes in appended SVG to the appender SVG
             self.number_of_classes += element.number_of_classes
             # Append SVGs
@@ -104,10 +106,10 @@ class SVGAppender(object):
 
         Returns
         -------
-        SVGAppender
+        SVGImgUtils
             newly created :py:class:`SVGAppender` initialised with the file content
         """
-        fig = SVGAppender()
+        fig = SVGImgUtils()
         fid = open(fname)
         svg_file = etree.parse(fid)
         fid.close()
@@ -125,11 +127,11 @@ class SVGAppender(object):
 
         Returns
         -------
-        SVGAppender
+        SVGImgUtils
             newly created :py:class:`SVGAppender` initialised with the string
             content.
         """
-        fig = SVGAppender()
+        fig = SVGImgUtils()
         svg = etree.fromstring(text.encode())
 
         fig.root = svg
@@ -142,7 +144,6 @@ class SVGAppender(object):
     def adddata(self):
         """Add more data to the svgappender"""
         self.style_element = self.root.find('./' + self.root[0].tag + '/' + self.root[0][0].tag)
-        self.group_path = './' + self.root[2].tag
         self.number_of_classes = cssutils.parseString(self.style_element.text).cssRules.length
 
     def modifygroupvalues(self, group_element):
@@ -160,13 +161,15 @@ class SVGAppender(object):
                 cls_number += self.number_of_classes
                 c.attrib['class'] = 'cls-' + str(cls_number)
 
-    def modifystylevalues(self,css_string):
+    def modifystylevalues(self,css_string, new_color):
         """
         Change cls-x selectors to a number aligned with total number of classes in the svgappender
         Parameters
         ----------
         css_string : str
             A css formed string. Its cls-x selectors should change.
+        new_color : str
+            A color represented in hex. Should replace old color marked as '#010101'
 
         Returns
         -------
@@ -180,6 +183,7 @@ class SVGAppender(object):
                 classes_selectors = rule.selectorText.split(',')
                 selectors = ''
                 for selectorText in classes_selectors:
+
                     cls = selectorText.split('-')
                     name, num = cls
                     num = int(num)
