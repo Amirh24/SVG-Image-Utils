@@ -1,5 +1,8 @@
-from lxml import etree
+import random
+import string
+
 import cssutils
+from lxml import etree
 
 SVG_NAMESPACE = "http://www.w3.org/2000/svg"
 XLINK_NAMESPACE = "http://www.w3.org/1999/xlink"
@@ -36,6 +39,7 @@ class SVGImgUtils(object):
     def __init__(self):
         self.root = etree.Element(SVG + "svg", nsmap=NSMAP)
         self.root.set("version", "1.1")
+        self.prepend = ''.join(random.choice(string.ascii_uppercase) for _ in range(6))
 
     def append(self, element):
         """Append new element to the svgimgutils
@@ -47,15 +51,6 @@ class SVGImgUtils(object):
 
                 """
         try:
-            # Change the Class paths according to the number of classes in the SVG
-            group_elements = element.root.findall('.')
-            for g in group_elements:
-                self.modifygroupvalues(g)
-            # Change the style tag according to the number of classes in the SVG
-            element.style_element.text = self.modifystylevalues(element.style_element.text)
-            # Add number of classes in appended SVG to the appender SVG
-            self.number_of_classes += element.number_of_classes
-            # Append SVGs
             self.root.append(element.root)
         except AttributeError:
             self.root.append(GroupElement(element).root)
@@ -112,7 +107,7 @@ class SVGImgUtils(object):
         svg_file = etree.parse(fid)
         fid.close()
         fig.root = svg_file.getroot()
-        fig.adddata()
+        fig.setup()
         return fig
 
     def fromstring(text):
@@ -133,16 +128,30 @@ class SVGImgUtils(object):
         svg = etree.fromstring(text.encode())
 
         fig.root = svg
-        fig.adddata()
+        fig.setup()
 
         return fig
 
     # ----PRIVATE METHODS----
 
+    def setup(self):
+        self.adddata()
+        self.makemodifications()
+
     def adddata(self):
         """Add more data to the svgimgutils"""
-        self.style_element = self.root.find('./' + self.root[0].tag + '/' + self.root[0][0].tag)
+        if len(self.root[0]):
+            self.style_element = self.root.find('./' + self.root[0].tag + '/' + self.root[0][0].tag)
+        else:
+            self.style_element = self.root.find('./' + self.root[0].tag)
         self.number_of_classes = cssutils.parseString(self.style_element.text).cssRules.length
+
+    def makemodifications(self):
+        group_elements = self.root.findall('.')
+        for g in group_elements:
+            self.modifygroupvalues(g)
+        # Change the style tag according to the number of classes in the SVG
+        self.style_element.text = self.modifystylevalues(self.style_element.text)
 
     def modifygroupvalues(self, group_element):
         """
@@ -155,9 +164,8 @@ class SVGImgUtils(object):
         for c in group_element.iter():
             cls = c.attrib.get('class')
             if cls is not None:
-                cls_number = int(cls[4:])
-                cls_number += self.number_of_classes
-                c.attrib['class'] = 'cls-' + str(cls_number)
+                c.attrib['class'] = f"{self.prepend}-{cls}"
+                
 
     def modifystylevalues(self,css_string):
         """
@@ -179,22 +187,16 @@ class SVGImgUtils(object):
                 classes_selectors = rule.selectorText.split(',')
                 selectors = ''
                 for selectorText in classes_selectors:
-
-                    cls = selectorText.split('-')
-                    name, num = cls
-                    num = int(num)
-                    num += self.number_of_classes
-                    selectors += '&' + name + '-' + str(num)
-
+                    cls = selectorText
+                    selectors += f"&{self.prepend}-{cls}"
+                    
                 # '&' is used as a place holder for ','. Replace them and discard the first ','
                 rule.selectorText = selectors.replace('&', ',')[1:]
 
             else:
-                cls = rule.selectorText.split('-')
-                name, num = cls
-                num = int(num)
-                num += self.number_of_classes
-                rule.selectorText = name + '-' + str(num)
+                cls_type = rule.selectorText[0]
+                cls = rule.selectorText[1:]
+                rule.selectorText = f"{cls_type}{self.prepend}-{cls}"
 
         css_without_newline_chars = str(sheet.cssText)[2:].replace('\\n', '')
         translator = str.maketrans('', '', ' \t\r')
