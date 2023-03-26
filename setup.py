@@ -7,7 +7,7 @@ setup(name='svgimgutils',
                        ''
                        'SVG Image Utils modifies attributes that contradict each other between all the appended SVGs and thus outputs a'
                        'new, intuitive looking layered SVG image.',
-      version='0.1.0',
+      version='0.1.1',
       py_modules=['svgimgutils'],
       install_requires=[
           'lxml',
